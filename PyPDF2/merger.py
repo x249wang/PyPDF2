@@ -211,7 +211,7 @@ class PdfFileMerger(object):
         """
         my_file = False
         if isString(fileobj):
-            fileobj = file(fileobj, 'wb')
+            fileobj = open(fileobj, 'wb')
             my_file = True
 
         # Add pages to the PdfFileWriter
